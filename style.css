@@ -1,0 +1,48 @@
+div#container{
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 2fr 5fr 1fr;
+}
+
+header {
+    border: solid;
+    border-width: 10px;
+    border-color: #f54;
+    grid-column: span 3;
+}
+
+nav{
+    border: solid;
+    border-width: 10px;
+    border-color: #f54;
+    grid-column: 1;
+    grid-column: span 1;
+
+}
+
+main{
+    border: solid;
+    border-width: 10px;
+    border-color: #f54;
+    grid-column: 2;
+    grid-column: span 1;
+
+}
+
+aside{
+    border: solid;
+    border-width: 10px;
+    border-color: #f54;
+    grid-column: 3;
+    grid-column: span 1;
+
+}
+
+footer {
+    border: solid;
+    border-width: 10px;
+    border-color: #f54;
+    grid-column: span 3;
+
+}

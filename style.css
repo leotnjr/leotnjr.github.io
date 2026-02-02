@@ -1,12 +1,21 @@
 div#container{
-    height:98vh;
+    height: 98vh;
+
+    box-sizing: border-box;
+
     display: grid;
     grid-template-columns: 1fr 5fr 2fr;
     grid-template-rows: 1fr 10fr 1fr;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
+    background-image: url("_images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: overlay;
+
     color: rgb(255, 255, 255);
 }
 
@@ -14,104 +23,171 @@ header {
     margin: 10px;
     padding: 10px;
 
+    background-color:rgb(117, 40, 33);
+    
     border-radius: 20px;
     border-width: 10px;
     /*
     border: solid;
     border-color: rgb(255, 111, 98);
     */
-    background-color:rgba(150, 50, 40, 0.5);
     grid-column: span 3;
+}
+header:hover{
+    background-color:rgba(223, 58, 46, 0.6);
 }
 
 nav{
-
     margin: 10px;
     padding: 10px;
+    
+    background-color:rgb(30, 80, 18);
 
     border-radius: 20px;
     /*
+    height:min-content;
+    
     border: solid;
     border-width: 10px;
     border-color: rgba(104, 255, 66, 0.2);
     */
-    background-color:rgba(104, 255, 66, 0.2);
     
     grid-column: 1;
     grid-column: span 1;
 }
 
-ul {
-    background-color: rgba(104, 255, 66, 0.2);;
-    padding: 5px;
-    margin:  auto;
-
-    border-radius: 10px;
-    /*
-    border: solid;
-    border-width: 4px;
-    border-color: rgba(104, 255, 66, 0.2);
-    */
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+nav:hover{
+    background-color:rgba(59, 150, 36, 0.4);
 }
 
-ul li {
-    padding: 5px 0px;
-    margin: 5px;
-    border-radius: 5px;
-    background: rgba(104, 255, 66, 0.2)
-}
-
-main{
+main {
     margin: 10px;
     padding: 10px;
+    
+    background-color:rgb(54, 66, 112);
 
+    /*
     border: solid;
-    border-radius: 20px;
     border-width: 10px;
     border-color: rgb(125, 149, 255);
-    background-color:rgba(125, 149, 255, 0.2);
-    
+    */
+    border-radius: 20px;
+
     grid-column: 2;
     grid-column: span 1;
+}
 
+main:hover {
+    background-color:rgba(90, 108, 180, 0.4);
 }
 
 aside{
     margin: 10px;
     padding: 10px;
 
-    border: solid;
-    border-radius: 20px;
+    background-color:rgb(80, 75, 27);
+    /*
     border-width: 10px;
+    border: solid;
     border-color: rgb(255, 240, 106);
-    background-color:rgba(255, 240, 106, 0.2);
+    */
+    border-radius: 20px;
 
     grid-column: 3;
     grid-column: span 1;
 
+    display: grid; 
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+}
+
+aside:hover{
+    background-color:rgba(146, 136, 49, 0.6);
+}
+
+article {
+    margin: 10px;
+    padding:10px;
+    padding-top: 5px;
+
+    background-color: rgba(131, 122, 44, 0.5);
+    
+    text-align: center;
+    /*
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(238, 199, 72);
+    */
+    border-radius: 10px;
+
+    grid-column: span 2;
+}
+
+article:hover{
+    background-color: rgba(238, 199, 72, 0.5);
 }
 
 footer {
     margin: 10px;
     padding: 10px;
 
+    background-color:rgba(238, 105, 255, 0.2);
+    /*
     border: solid;
-    border-radius: 20px;
     border-width: 10px;
     border-color: rgb(238, 105, 255);
-    background-color:rgba(238, 105, 255, 0.2);
+    */
+    border-radius: 20px;
 
     grid-column: span 3;
+}
 
+ul {
+    margin:  auto;
+    padding: 10px 10px;
+
+    border-radius: 10px;
+
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    /*
+    background-color: rgba(104, 255, 66, 0.2);;
+    padding: 5px;
+    border: solid;
+    border-width: 4px;
+    border-color: rgba(104, 255, 66, 0.2);
+    */
+}
+
+ul li {
+    margin: 5px;
+    padding: 5px 0px;
+
+    background: rgba(104, 255, 66, 0.5);
+
+    border-radius: 5px;
+}
+
+ul li:hover {
+    padding: 5px 0px;
+    margin: 5px;
+
+    background: rgba(104, 255, 66, 0.8);
+
+    border-radius: 5px;
 }
 
 h1 {
-    margin: 10px;
-    padding: 10px;
+    margin: auto;
+    padding: auto;
 
+    text-align: center;
+}
+
+p {
+    margin: 10px auto;
+    padding: 10px auto;
+
+    font-size: 10pt;
     text-align: center;
 }

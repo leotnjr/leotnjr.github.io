@@ -6,43 +6,59 @@ div#container{
 }
 
 header {
+    margin: 10px;
+    padding: 10px;
     border: solid;
     border-width: 10px;
-    border-color: #f54;
+    border-color: rgb(255, 111, 98);
     grid-column: span 3;
 }
 
 nav{
+    margin: 10px;
+    padding: 10px;
     border: solid;
     border-width: 10px;
-    border-color: #f54;
+    border-color: rgb(104, 255, 66);
     grid-column: 1;
     grid-column: span 1;
 
 }
 
 main{
+    margin: 10px;
+    padding: 10px;
     border: solid;
     border-width: 10px;
-    border-color: #f54;
+    border-color: rgb(125, 149, 255);
     grid-column: 2;
     grid-column: span 1;
 
 }
 
 aside{
+    margin: 10px;
+    padding: 10px;
     border: solid;
     border-width: 10px;
-    border-color: #f54;
+    border-color: rgb(255, 240, 106);
     grid-column: 3;
     grid-column: span 1;
 
 }
 
 footer {
+    margin: 10px;
+    padding: 10px;
     border: solid;
     border-width: 10px;
-    border-color: #f54;
+    border-color: rgb(238, 105, 255);
     grid-column: span 3;
 
+}
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
 }

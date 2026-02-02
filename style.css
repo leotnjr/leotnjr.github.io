@@ -1,36 +1,74 @@
 div#container{
-    height:100vh;
+    height:98vh;
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 2fr 5fr 1fr;
 }
 
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
 header {
     margin: 10px;
     padding: 10px;
+
     border: solid;
     border-width: 10px;
     border-color: rgb(255, 111, 98);
+    background-color:rgba(255, 111, 98, 0.2);
+    
     grid-column: span 3;
 }
 
 nav{
+
     margin: 10px;
     padding: 10px;
+
     border: solid;
     border-width: 10px;
     border-color: rgb(104, 255, 66);
+    background-color:rgba(104, 255, 66, 0.2);
+    
     grid-column: 1;
     grid-column: span 1;
+}
 
+ul {
+    background-color: rgba(104, 255, 66, 0.2);;
+    padding: 5px;
+    margin:  auto;
+
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(104, 255, 66);
+    
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    padding: 5px 0px;
+    margin: 5px;
+
+    border: solid;
+    border-width: 4px;
+    border-color: rgb(104, 255, 66);
 }
 
 main{
     margin: 10px;
     padding: 10px;
+
     border: solid;
     border-width: 10px;
     border-color: rgb(125, 149, 255);
+    background-color:rgba(125, 149, 255, 0.2);
+    
     grid-column: 2;
     grid-column: span 1;
 
@@ -39,9 +77,12 @@ main{
 aside{
     margin: 10px;
     padding: 10px;
+
     border: solid;
     border-width: 10px;
     border-color: rgb(255, 240, 106);
+    background-color:rgba(255, 240, 106, 0.2);
+
     grid-column: 3;
     grid-column: span 1;
 
@@ -50,9 +91,12 @@ aside{
 footer {
     margin: 10px;
     padding: 10px;
+
     border: solid;
     border-width: 10px;
     border-color: rgb(238, 105, 255);
+    background-color:rgba(238, 105, 255, 0.2);
+
     grid-column: span 3;
 
 }
@@ -60,5 +104,6 @@ footer {
 h1 {
     margin: 10px;
     padding: 10px;
+
     text-align: center;
 }

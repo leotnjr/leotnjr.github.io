@@ -81,6 +81,19 @@ main:hover {
     background-color:rgba(90, 108, 180, 0.4);
 }
 
+.projects:link{
+    font: bold;
+    color: #FFF;
+}
+.projects:visited{
+    font: bold;
+    color: #e683ff;
+}
+.projects:hover{
+    font: bold;
+    color: #83c3ff;
+}
+
 aside{
     margin: 10px;
     padding: 10px;
